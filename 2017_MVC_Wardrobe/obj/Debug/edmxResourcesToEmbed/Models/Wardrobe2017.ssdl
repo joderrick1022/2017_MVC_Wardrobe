@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Wardrobe2017Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Categorty_Type">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Categories" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Wardrobe_Items">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Season" Type="varchar" MaxLength="100" />
+    <Property Name="Occasion" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Wardrobe_Items_Categorty_Type">
+    <End Role="Categorty_Type" Type="Self.Categorty_Type" Multiplicity="1" />
+    <End Role="Wardrobe_Items" Type="Self.Wardrobe_Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorty_Type">
+        <PropertyRef Name="TypeId" />
+      </Principal>
+      <Dependent Role="Wardrobe_Items">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Wardrobe2017ModelStoreContainer">
+    <EntitySet Name="Categorty_Type" EntityType="Self.Categorty_Type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wardrobe_Items" EntityType="Self.Wardrobe_Items" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Wardrobe_Items_Categorty_Type" Association="Self.FK_Wardrobe_Items_Categorty_Type">
+      <End Role="Categorty_Type" EntitySet="Categorty_Type" />
+      <End Role="Wardrobe_Items" EntitySet="Wardrobe_Items" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
