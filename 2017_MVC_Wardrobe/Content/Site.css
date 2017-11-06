@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:chartreuse;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,104 @@ select,
 textarea {
     max-width: 280px;
 }
+#kyrie{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+
+#indians{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+
+
+#cavs{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+#browns{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+#airmax{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+
+#addidas{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+
+#gear2{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+#movado{
+
+    width:340px;
+    height:340px;
+
+
+
+}
+
+.caption{
+
+    text-align:center;
+    background-color:dimgray;
+
+    height:225PX;
+
+
+}
+
+#navi{
+
+    background-color:transparent;
+}
+
+#jumbo{
+
+    background-color:black;
+
+
+}
+
+/*.thumbnail{
+
+
+    width:350px;
+    height:350px;
+
+}*/
+
+
