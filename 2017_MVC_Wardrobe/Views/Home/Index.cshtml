@@ -3,85 +3,9 @@
 }
 
 <div id="jumbo" class="jumbotron">
-    <h1 style="text-align:center; background-color:darkgoldenrod;color:orangered;">Welcome to my closet</h1>
-<div class="container">
-    <div class="row">
-
-
-        <br />
-
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-
-            <div class="thumbnail">
-                <img id="kyrie" src="~/Content/Photos/Kyrie_Jersy.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>TOPS</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="indians" src="~/Content/Photos/Indians_Coat.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>TOPS</h1>
-                </div>
-            </div>
-        </div>
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="cavs" src="~/Content/Photos/CavsPants.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>BOTTOMS</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="browns" src="~/Content/Photos/Browns_PJPants.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>BOTTOMS</h1>
-                </div>
-            </div>
-        </div>
-         <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="airmax" src="~/Content/Photos/AirMax.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>SHOES</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="addidas" src="~/Content/Photos/Addidas.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>SHOES</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="gear2" src="~/Content/Photos/Gear2.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>ACCESSORIES</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
-            <div class="thumbnail">
-                <img id="movado" src="~/Content/Photos/Movado.jpg" class="img-responsive">
-                <div class="caption">
-                    <h1>ACCESSORIES</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></div>
+    <h1>Jds wardrobe</h1>
+    <button id="homeButton">@Html.ActionLink("Create wardrobe", "Create", "Wardrobe_Items")</button>
+</div>
 
 <div class="container">
     <div class="row">
@@ -89,78 +13,124 @@
 
         <br />
 
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
 
             <div class="thumbnail">
                 <img id="kyrie" src="~/Content/Photos/Kyrie_Jersy.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>TOPS</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/1", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="indians" src="~/Content/Photos/Indians_Coat.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>TOPS</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/2", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="cavs" src="~/Content/Photos/CavsPants.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>BOTTOMS</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/3", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="browns" src="~/Content/Photos/Browns_PJPants.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>BOTTOMS</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/4", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="airmax" src="~/Content/Photos/AirMax.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>SHOES</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/5", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="addidas" src="~/Content/Photos/Addidas.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>SHOES</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/6", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="gear2" src="~/Content/Photos/Gear2.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>ACCESSORIES</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/7", "Wardrobe_Items")
+                    </button>
+
+
+
                 </div>
             </div>
         </div>
 
-        <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-6 filter hdpe">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
             <div class="thumbnail">
                 <img id="movado" src="~/Content/Photos/Movado.jpg" class="img-responsive">
                 <div class="caption">
                     <h1>ACCESSORIES</h1>
+
+                    <button>
+                        @Html.ActionLink("Details", "Details/8", "Wardrobe_Items")
+                    </button>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 
 @*<div class="row">
     <div class="col-md-4">

@@ -111,8 +111,23 @@ textarea {
 #jumbo{
 
     background-color:black;
+    text-align:center;
+    color:darkmagenta;
 
 
+}
+
+#detail_caption{
+
+
+    height:300px;
+
+
+}
+#homeButton {
+    color:red;
+    text-decoration: underline;
+    background-color:blanchedalmond;
 }
 
 /*.thumbnail{
